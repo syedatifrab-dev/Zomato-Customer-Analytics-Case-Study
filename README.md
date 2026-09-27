@@ -72,15 +72,10 @@ The project is divided into five major analytical areas:
 - Filtering
 - Aggregations
 
-## Example
 
-```sql
-SELECT 
-    DATE_TRUNC('MONTH', order_timestamp) AS order_month,
-    SUM(order_amount) AS total_revenue
-FROM zomato_orders
 
-👥 2. Customer Analysis
+## 👥 2. Customer Analysis
+
 Business Questions
 1. Who are the top 20 customers by revenue?
 2. What percentage of revenue comes from top customers?
@@ -112,7 +107,8 @@ FROM customer_revenue
 ORDER BY total_revenue DESC
 LIMIT 20;
 
-🍴 3. Restaurant Performance
+## 🍴 3. Restaurant Performance
+
 Business Questions
 1. Which restaurants generate the highest revenue?
 2. Which restaurants receive the most orders?
@@ -142,7 +138,7 @@ GROUP BY
     r.restaurant_name
 ORDER BY total_revenue DESC;
 
-❌ 4. Cancellation & Refund Analysis
+## ❌ 4. Cancellation & Refund Analysis
 
 Business Questions
 1. What is the cancellation rate?
@@ -171,7 +167,8 @@ SELECT
 FROM zomato_orders
 WHERE order_status = 'Cancelled';
 
-🔄 5. Customer Churn Analysis
+## 🔄 5. Customer Churn Analysis
+
 Customer churn is defined in this project as:
 A customer who has not placed an order for more than 90 days relative to the latest transaction date in the dataset.
 
@@ -230,7 +227,7 @@ SELECT
     ) AS churn_rate
 FROM churn;
 
-🧠 Key SQL Skills Demonstrated
+## 🧠 Key SQL Skills Demonstrated
 This project demonstrates practical SQL skills used in Data Analyst roles.
 SQL Fundamentals
 - SELECT
@@ -292,7 +289,7 @@ Typical fields include:
 - rating
 
 
-🔍 Key Business Metrics
+## 🔍 Key Business Metrics
 
 The project focuses on the following KPIs:
 KPI	Description
@@ -308,7 +305,7 @@ Churn Rate	Percentage of customers classified as churned
 Churn Revenue Loss	Revenue associated with churned customers
 
 
-📈 Business Insights
+## 📈 Business Insights
 The analysis is designed to identify:
 - Revenue growth and decline patterns
 - High-performing cities
@@ -325,7 +322,7 @@ The analysis is designed to identify:
 
 Final business insights and recommendations are based on the results generated from the SQL analysis.
 
-💡 Business Recommendations
+## 💡 Business Recommendations
 Based on the analytical findings, potential business actions include:
 Customer Retention
 - Develop targeted retention campaigns for high-value churned customers.
@@ -344,7 +341,7 @@ Cancellation Management
 - Analyze cancellation reasons and operational patterns.
 - Reduce preventable cancellations to minimize revenue leakage.
 
-🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 - SQL
 - Snowflake
 - Data Analysis
@@ -354,7 +351,7 @@ Cancellation Management
 - Business Analytics
 
 
-⭐ Project Highlights
+## ⭐ Project Highlights
 This project demonstrates the ability to:
 - Translate business questions into SQL queries
 - Analyze large transactional datasets
@@ -367,7 +364,7 @@ This project demonstrates the ability to:
 - Convert SQL analysis into actionable business insights
 
 
-📌 Conclusion
+## 📌 Conclusion
 The Zomato Customer Analytics Case Study demonstrates how SQL can be used to analyze customer behavior, revenue performance, restaurant operations, cancellations, and churn.
 The analysis provides a structured approach for identifying business opportunities, improving customer retention, reducing revenue leakage, and supporting data-driven decision-making.
 
