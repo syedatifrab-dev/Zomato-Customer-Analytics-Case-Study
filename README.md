@@ -53,7 +53,7 @@ The project is divided into five major analytical areas:
 
 # 💰 1. Revenue Analysis
 
-### Business Questions
+## Business Questions
 
 1. What is the total revenue?
 2. What is the monthly revenue trend?
@@ -61,7 +61,7 @@ The project is divided into five major analytical areas:
 4. Which payment mode generates the most revenue?
 5. What is the Average Order Value (AOV)?
 
-### SQL Concepts Used
+## SQL Concepts Used
 
 - `SUM()`
 - `AVG()`
@@ -72,7 +72,7 @@ The project is divided into five major analytical areas:
 - Filtering
 - Aggregations
 
-### Example
+## Example
 
 ```sql
 SELECT 
@@ -374,6 +374,3 @@ The analysis provides a structured approach for identifying business opportuniti
 
 
 
-WHERE order_status = 'Delivered'
-GROUP BY 1
-ORDER BY 1;
